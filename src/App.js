@@ -1,11 +1,12 @@
 import React from "react";
 import "./styles.css";
+import Container from "./components/Container.jsx";
+import { AppWrapper } from "./components/styles.js";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <AppWrapper>
+      <Container />
+    </AppWrapper>
   );
 }
