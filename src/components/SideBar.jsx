@@ -4,7 +4,7 @@ import { SideBarWrapper } from "./styles.js";
 export default function SideBar() {
   return (
     <SideBarWrapper>
-      <h1>SIDEBAR</h1>
+      <h3>SIDEBAR</h3>
     </SideBarWrapper>
   );
 }

@@ -4,7 +4,7 @@ import { HeaderWrapper } from "./styles.js";
 export default function Header() {
   return (
     <HeaderWrapper>
-      <h1>HEADER</h1>
+      <h3>HEADER</h3>
     </HeaderWrapper>
   );
 }

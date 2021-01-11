@@ -3,34 +3,31 @@ import styled from "styled-components";
 export const AppWrapper = styled.div`
   font-family: sans-serif;
   text-align: center;
-  margin: 0;
-  display: grid;
-  grid-template:
-    "header header header" 80px
-    "side container container" 3fr
-    "footer footer footer" 80px;
+  margin: 0%;
 `;
 
 export const HeaderWrapper = styled.div`
-  margin: 0;
   background-color: green;
-  grid-area: header;
+  height: 5vh;
 `;
 
 export const ContainerWrapper = styled.div`
-  margin: 0;
   background-color: red;
-  grid-area: container;
+  display: flex;
+  height: 90vh;
 `;
 
 export const SideBarWrapper = styled.div`
-  margin: 0;
   background-color: blue;
-  grid-area: side;
+  width: 20vw;
+`;
+
+export const MainWrapper = styled.div`
+  background-color: grey;
+  width: 80vw;
 `;
 
 export const FooterWrapper = styled.div`
-  margin: 0;
   background-color: yellow;
-  grid-area: footer;
+  height: 5vh;
 `;
