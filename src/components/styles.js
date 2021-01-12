@@ -8,18 +8,31 @@ export const AppWrapper = styled.div`
 
 export const HeaderWrapper = styled.div`
   background-color: green;
-  height: 5vh;
+  height: 20px;
+`;
+
+export const FooterWrapper = styled.div`
+  background-color: yellow;
+  height: 20px;
 `;
 
 export const ContainerWrapper = styled.div`
-  background-color: red;
   display: flex;
-  height: 90vh;
+  height: 100vh;
 `;
 
 export const SideBarWrapper = styled.div`
   background-color: blue;
   width: 20vw;
+  ul {
+    list-style: none;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+  }
+  a {
+    text-decoration: none;
+  }
 `;
 
 export const MainWrapper = styled.div`
@@ -27,7 +40,16 @@ export const MainWrapper = styled.div`
   width: 80vw;
 `;
 
-export const FooterWrapper = styled.div`
-  background-color: yellow;
-  height: 5vh;
+export const SubMenuWrapper = styled.div`
+  background-color: orange;
+  ul {
+    display: flex;
+    list-style: none;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+  }
+  a {
+    text-decoration: none;
+  }
 `;

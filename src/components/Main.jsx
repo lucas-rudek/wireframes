@@ -1,10 +1,22 @@
 import React from "react";
-import { MainWrapper } from "./styles.js";
+import { MainWrapper, SubMenuWrapper } from "./styles.js";
 
 export default function Main() {
   return (
     <MainWrapper>
-      <h3>MAIN</h3>
+      <SubMenuWrapper>
+        <ul>
+          <li>
+            <a href="#">Sub-Menu 1</a>
+          </li>
+          <li>
+            <a href="#">Sub-Menu 2</a>
+          </li>
+          <li>
+            <a href="#">Sub-Menu 3</a>
+          </li>
+        </ul>
+      </SubMenuWrapper>
     </MainWrapper>
   );
 }
