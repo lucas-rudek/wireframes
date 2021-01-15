@@ -6,19 +6,22 @@ export default function SideBar() {
     <SideBarWrapper>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <a href="#">Oportunidades de Negócio</a>
         </li>
         <li>
-          <a href="#">Produtos</a>
+          <a href="#">Postar Anúncio</a>
         </li>
         <li>
-          <a href="#">Missão</a>
+          <a href="#">Controle de estoque e documentos</a>
         </li>
         <li>
-          <a href="#">Links</a>
+          <a href="#">Gerenciamento de Caixa</a>
         </li>
         <li>
-          <a href="#">Contato</a>
+          <a href="#">Emitir Nota Fiscal</a>
+        </li>
+        <li>
+          <a href="#">Suporte</a>
         </li>
       </ul>
     </SideBarWrapper>
