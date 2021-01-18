@@ -1,10 +1,5 @@
 import styled from "styled-components";
 
-export const AppWrapper = styled.div`
-  font-family: sans-serif;
-  margin: 0%;
-`;
-
 export const HeaderWrapper = styled.div`
   display: flex;
   background-color: green;
@@ -42,7 +37,7 @@ export const FooterWrapper = styled.div`
 
 export const ContainerWrapper = styled.div`
   display: flex;
-  height: 100vh;
+  height: 800px;
 `;
 
 export const SideBarWrapper = styled.div`

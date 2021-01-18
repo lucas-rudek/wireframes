@@ -1,5 +1,5 @@
 import React from "react";
-import { SideBarWrapper } from "./styles.js";
+import { SideBarWrapper } from "../styles.js";
 
 export default function SideBar() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { MainWrapper, SubMenuWrapper } from "./styles.js";
+import { MainWrapper, SubMenuWrapper } from "../styles.js";
 
 export default function Main() {
   return (

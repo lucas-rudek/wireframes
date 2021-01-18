@@ -1,5 +1,5 @@
 import React from "react";
-import { HeaderWrapper } from "./styles.js";
+import { HeaderWrapper } from "../styles.js";
 import HeaderInfo from "./HeaderInfo.jsx";
 import HeaderMenu from "./HeaderMenu.jsx";
 

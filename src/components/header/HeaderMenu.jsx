@@ -1,5 +1,5 @@
 import React from "react";
-import { HeaderMenuWrapper } from "./styles.js";
+import { HeaderMenuWrapper } from "../styles.js";
 
 export default function HeaderMenu() {
   let image =
