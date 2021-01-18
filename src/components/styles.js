@@ -12,8 +12,11 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const HeaderMenuWrapper = styled.div`
+  width: 20vw;
+  display: flex;
+
   p {
-    margin: 15px 20px 20px 70px;
+    margin-left: 60px;
   }
 
   img {
@@ -24,16 +27,17 @@ export const HeaderMenuWrapper = styled.div`
 
 export const HeaderInfoWrapper = styled.div`
   background-color: blue;
-  height: 50px;
-
-  p {
-    margin: 15px 20px 20px 70px;
-  }
+  width: 80vw;
+  display: flex;
+  justify-content: flex-end;
 `;
 
 export const FooterWrapper = styled.div`
   background-color: yellow;
-  height: 30px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
 `;
 
 export const ContainerWrapper = styled.div`
