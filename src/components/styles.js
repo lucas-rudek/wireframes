@@ -63,11 +63,15 @@ export const SideBarWrapper = styled.div`
 `;
 
 export const MainWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
   background-color: lightgrey;
   width: 80vw;
 `;
 
 export const SubMenuWrapper = styled.div`
+  width: inherit;
+  height: 50px;
   background-color: orange;
   ul {
     display: flex;
@@ -78,11 +82,18 @@ export const SubMenuWrapper = styled.div`
   }
 
   li {
-    margin: 10px 100px 10px 100px;
+    margin: 10px 100px 0 100px;
   }
 
   a {
     color: black;
     text-decoration: none;
   }
+`;
+
+export const WidgetWrapper = styled.div`
+  margin: 5% 5% 5% 8%;
+  background-color: red;
+  width: 200px;
+  height: 200px;
 `;
