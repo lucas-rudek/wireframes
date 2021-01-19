@@ -32,6 +32,7 @@ export const HeaderInfoWrapper = styled.div`
 `;
 
 export const FooterWrapper = styled.div`
+  width: 100%;
   background-color: yellow;
   height: 50px;
   display: flex;
@@ -41,18 +42,14 @@ export const FooterWrapper = styled.div`
 
 export const ContainerWrapper = styled.div`
   display: flex;
-  height: 800px;
+  height: 1100px;
 `;
 
 export const SideBarWrapper = styled.div`
   background-color: cyan;
   width: 20vw;
-  ul {
-    list-style: none;
-    text-align: left;
-    padding: 0;
-    margin: 0;
-  }
+  text-align: center;
+
   li {
     margin: 80px 0px 0px 10px;
   }
@@ -62,27 +59,50 @@ export const SideBarWrapper = styled.div`
   }
 `;
 
+export const SideBarList = styled.ul`
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+`;
+
 export const MainWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
+  align-content: start;
   background-color: lightgrey;
   width: 80vw;
 `;
 
-export const SubMenuWrapper = styled.div`
-  width: inherit;
-  height: 50px;
-  background-color: orange;
-  ul {
-    display: flex;
-    list-style: none;
-    text-align: left;
-    padding: 0px;
-    margin: 0px;
+export const MainTitle = styled.h1`
+  font-size: 2.5em;
+  text-align: center;
+  width: 100%;
+`;
+
+export const WidgetWrapper = styled.div`
+  margin: 2% 8% 2% 8%;
+  background-color: red;
+  width: 200px;
+  height: 300px;
+
+  p {
+    margin: 10px 10px 10px 10px;
   }
 
+  img {
+    width: 200px;
+    height: 200px;
+  }
+`;
+
+export const SubMenuWrapper = styled.div`
+  width: 100%;
+  height: 50px;
+  background-color: orange;
+
   li {
-    margin: 10px 100px 0 100px;
+    margin: 0px 70px 0px 70px;
   }
 
   a {
@@ -91,9 +111,9 @@ export const SubMenuWrapper = styled.div`
   }
 `;
 
-export const WidgetWrapper = styled.div`
-  margin: 5% 5% 5% 8%;
-  background-color: red;
-  width: 200px;
-  height: 200px;
+export const SubMenuList = styled.ul`
+  display: flex;
+  list-style: none;
+  text-align: left;
+  margin: 15px 0px 15px 0px;
 `;

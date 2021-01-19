@@ -1,10 +1,10 @@
 import React from "react";
-import { SideBarWrapper } from "../styles.js";
+import { SideBarWrapper, SideBarList } from "../styles.js";
 
 export default function SideBar() {
   return (
     <SideBarWrapper>
-      <ul>
+      <SideBarList>
         <li>
           <a href="#">Oportunidades de Negócio</a>
         </li>
@@ -23,7 +23,7 @@ export default function SideBar() {
         <li>
           <a href="#">Suporte</a>
         </li>
-      </ul>
+      </SideBarList>
     </SideBarWrapper>
   );
 }

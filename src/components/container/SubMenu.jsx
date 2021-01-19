@@ -1,10 +1,10 @@
 import React from "react";
-import { SubMenuWrapper } from "../styles.js";
+import { SubMenuWrapper, SubMenuList } from "../styles.js";
 
 export default function SubMenu() {
   return (
     <SubMenuWrapper>
-      <ul>
+      <SubMenuList>
         <li>
           <a href="#">Sub-Menu 1</a>
         </li>
@@ -14,7 +14,10 @@ export default function SubMenu() {
         <li>
           <a href="#">Sub-Menu 3</a>
         </li>
-      </ul>
+        <li>
+          <a href="#">Sub-Menu 4</a>
+        </li>
+      </SubMenuList>
     </SubMenuWrapper>
   );
 }
