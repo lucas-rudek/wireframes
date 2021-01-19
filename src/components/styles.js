@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const AppWrapper = styled.div`
+  font-family: sans-serif;
+`;
+
 export const HeaderWrapper = styled.div`
   display: flex;
   background-color: green;
