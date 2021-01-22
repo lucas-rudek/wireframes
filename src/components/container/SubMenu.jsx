@@ -6,16 +6,16 @@ export default function SubMenu() {
     <SubMenuWrapper>
       <SubMenuList>
         <li>
-          <a href="#">Sub-Menu 1</a>
+          <a href="#">Oportunidades</a>
         </li>
         <li>
-          <a href="#">Sub-Menu 2</a>
+          <a href="#">Leilões</a>
         </li>
         <li>
-          <a href="#">Sub-Menu 3</a>
+          <a href="#">Favoritos</a>
         </li>
         <li>
-          <a href="#">Sub-Menu 4</a>
+          <a href="#">Conectar WhatsApp</a>
         </li>
       </SubMenuList>
     </SubMenuWrapper>

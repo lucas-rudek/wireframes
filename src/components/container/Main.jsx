@@ -9,11 +9,6 @@ export default function Main() {
       <SubMenu />
       <MainTitle>Oportunidades de Negócio</MainTitle>
       <Widget />
-      <Widget />
-      <Widget />
-      <Widget />
-      <Widget />
-      <Widget />
     </MainWrapper>
   );
 }
