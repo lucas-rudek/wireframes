@@ -7,9 +7,7 @@ import { AppWrapper } from "./components/styles.js";
 import Scraper from "./components/Scraper.js";
 
 export default function App() {
-  (async () => {
-    await Scraper();
-  })();
+  Scraper();
 
   return (
     <AppWrapper>
