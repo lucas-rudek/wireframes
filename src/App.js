@@ -8,7 +8,7 @@ import Scraper from "./components/Scraper.js";
 
 export default function App() {
   (async () => {
-    await Scraper;
+    await Scraper();
   })();
 
   return (
