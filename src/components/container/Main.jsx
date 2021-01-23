@@ -7,7 +7,7 @@ export default function Main() {
   return (
     <MainWrapper>
       <SubMenu />
-      <MainTitle></MainTitle>
+      <MainTitle>Oportunidades de Negócio</MainTitle>
       <Widget />
     </MainWrapper>
   );
