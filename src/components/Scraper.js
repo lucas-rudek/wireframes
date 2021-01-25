@@ -1,10 +1,24 @@
 import axios from "axios";
+import cheerio from "cheerio";
+import request from "request";
 
 export default async function Scraper() {
   const url =
-    "https://api.scraperapi.com/?api_key=69721ee4e521c5738c2d9059e6a15e69&url=https://pr.olx.com.br/regiao-de-ponta-grossa-e-guarapuava/autos-e-pecas/carros-vans-e-utilitarios/bmw-118i-sport-831618601";
+    "https://app.scrapingbee.com/api/v1/?api_key=AP91PR5CN47N6B8KRFX51XBWRBMGMRHDONI0BIZX622C8BTG5U5NRDM6L9H9XZTVVYXDO8O5M0ER8TKB&url=https%3A%2F%2Fpr.olx.com.br%2Fregiao-de-ponta-grossa-e-guarapuava%2Fautos-e-pecas&render_js=false";
 
-  const teste = await axios.get(url);
+  request(
+    {
+      method: "GET",
+      url: url
+    },
+    (err, res, body) => {
+      if (err) return console.error(err);
 
-  console.log(teste.data);
+      let $ = cheerio.load(body);
+
+      let title = $("title");
+
+      console.log(title.text());
+    }
+  );
 }
