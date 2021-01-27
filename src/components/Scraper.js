@@ -15,10 +15,24 @@ export default async function Scraper() {
       img: $(".sc-101cdir-2 img").attr("src")
     }));*/
 
-    $(".sc-1iuc9a2-0 h2")
+    let title = $(".sc-1iuc9a2-0.eOiLKd h2")
       .map((i, el) => {
-        return console.log($(el).text());
+        return $(el).text();
       })
       .get();
+
+    let price = $(".sc-hmzhuo.sc-1iuc9a2-7.CYgas.sc-jTzLTM.iwtnNi p")
+      .map((i, el) => {
+        return $(el).first().text();
+      })
+      .get();
+
+    let img = $(".sc-101cdir-2.kBCTPf img")
+      .map((i, el) => {
+        return $(el).attr("src");
+      })
+      .get();
+
+    console.log(img);
   });
 }
