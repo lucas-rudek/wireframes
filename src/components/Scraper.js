@@ -15,6 +15,10 @@ export default async function Scraper() {
       img: $(".sc-101cdir-2 img").attr("src")
     }));*/
 
-    let teste = $(".sc-1iuc9a2-0 h2").map((res) => console.log(res));
+    $(".sc-1iuc9a2-0 h2")
+      .map((i, el) => {
+        return console.log($(el).text());
+      })
+      .get();
   });
 }
