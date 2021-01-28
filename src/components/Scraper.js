@@ -9,25 +9,19 @@ export default async function Scraper() {
     if (err) return console.error(err);
     let $ = cheerio.load(body);
 
-    /*const data = $.map((res, index) => ({
-      title: $(".sc-1iuc9a2-0 h2").text(),
-      price: $(".sc-hmzhuo p").text(),
-      img: $(".sc-101cdir-2 img").attr("src")
-    }));*/
-
-    let title = $(".sc-1iuc9a2-0.eOiLKd h2")
+    let title = $("h2.sc-1iuc9a2-1.daMDOK.sc-ifAKCX.eKQLlb")
       .map((i, el) => {
         return $(el).text();
       })
       .get();
 
-    let price = $(".sc-hmzhuo.sc-1iuc9a2-7.CYgas.sc-jTzLTM.iwtnNi p")
+    let price = $("p.sc-ifAKCX.eoKYee")
       .map((i, el) => {
-        return $(el).first().text();
+        return $(el).text();
       })
       .get();
 
-    let img = $(".sc-101cdir-2.kBCTPf img")
+    let img = $("div.sc-101cdir-2.kBCTPf img")
       .map((i, el) => {
         return $(el).attr("src");
       })
