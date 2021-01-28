@@ -27,6 +27,24 @@ export default async function Scraper() {
       })
       .get();
 
-    console.log(img);
+    let img_noscript = $("div.sc-101cdir-2 noscript")
+      .map((i, el) => {
+        return $(el).text();
+      })
+      .get();
+
+    let address = $("span.sc-7l84qu-1.ciykCV.sc-ifAKCX.dpURtf")
+      .map((i, el) => {
+        return $(el).text();
+      })
+      .get();
+
+    let description = $("span.sc-1j5op1p-0.lnqdIU.sc-ifAKCX.eLPYJb")
+      .map((i, el) => {
+        return $(el).text();
+      })
+      .get();
+
+    console.log(description);
   });
 }
