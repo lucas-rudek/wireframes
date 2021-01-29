@@ -27,41 +27,5 @@ export default async function Scraper() {
       .get();
 
     console.log(data);
-
-    /*let title = $("h2.sc-1iuc9a2-1.daMDOK.sc-ifAKCX.eKQLlb")
-      .map((i, el) => {
-        return $(el).text();
-      })
-      .get();
-
-    let price = $("p.sc-ifAKCX.eoKYee")
-      .map((i, el) => {
-        return $(el).text();
-      })
-      .get();
-
-    let img = $("div.sc-101cdir-2.kBCTPf img")
-      .map((i, el) => {
-        return $(el).attr("src");
-      })
-      .get();
-
-    let img_noscript = $("div.sc-101cdir-2 noscript")
-      .map((i, el) => {
-        return $(el).text();
-      })
-      .get();
-
-    let address = $("span.sc-7l84qu-1.ciykCV.sc-ifAKCX.dpURtf")
-      .map((i, el) => {
-        return $(el).text();
-      })
-      .get();
-
-    let description = $("span.sc-1j5op1p-0.lnqdIU.sc-ifAKCX.eLPYJb")
-      .map((i, el) => {
-        return $(el).text();
-      })
-      .get();*/
   });
 }
