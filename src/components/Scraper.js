@@ -9,7 +9,26 @@ export default async function Scraper() {
     if (err) return console.error(err);
     let $ = cheerio.load(body);
 
-    let title = $("h2.sc-1iuc9a2-1.daMDOK.sc-ifAKCX.eKQLlb")
+    let data = $("div.fnmrjs-1")
+      .map((i, el) => {
+        return {
+          title: $(el).find("h2.sc-1iuc9a2-1.daMDOK.sc-ifAKCX.eKQLlb").text(),
+          price: $(el).find("p.sc-ifAKCX.eoKYee").text(),
+          address: $(el)
+            .find("span.sc-7l84qu-1.ciykCV.sc-ifAKCX.dpURtf")
+            .text(),
+          description: $(el)
+            .find("span.sc-1j5op1p-0.lnqdIU.sc-ifAKCX.eLPYJb")
+            .text(),
+          img: $(el).find("div.sc-101cdir-2.kBCTPf img").attr("src"),
+          img_noscript: $(el).find("div.sc-101cdir-2 noscript").text()
+        };
+      })
+      .get();
+
+    console.log(data);
+
+    /*let title = $("h2.sc-1iuc9a2-1.daMDOK.sc-ifAKCX.eKQLlb")
       .map((i, el) => {
         return $(el).text();
       })
@@ -43,8 +62,6 @@ export default async function Scraper() {
       .map((i, el) => {
         return $(el).text();
       })
-      .get();
-
-    console.log(description);
+      .get();*/
   });
 }
