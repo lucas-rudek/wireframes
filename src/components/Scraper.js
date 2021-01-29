@@ -12,6 +12,8 @@ export default async function Scraper() {
     let data = $("div.fnmrjs-1")
       .map((i, el) => {
         return {
+          // somente com o primeiro seletor deve funcionar,
+          // deixar assim para garantir
           title: $(el).find("h2.sc-1iuc9a2-1.daMDOK.sc-ifAKCX.eKQLlb").text(),
           price: $(el).find("p.sc-ifAKCX.eoKYee").text(),
           address: $(el)
@@ -22,6 +24,9 @@ export default async function Scraper() {
             .text(),
           img: $(el).find("div.sc-101cdir-2.kBCTPf img").attr("src"),
           img_noscript: $(el).find("div.sc-101cdir-2 noscript").text()
+
+          //usar if para img, pegar link pro anuncio
+          //descobrir como iterar por todas paginas
         };
       })
       .get();
