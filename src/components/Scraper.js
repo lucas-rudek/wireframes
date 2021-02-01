@@ -30,7 +30,13 @@ export default async function Scraper() {
         };
       })
       .get();
-
+    data.map((res) => {
+      if (
+        res.img === "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+      ) {
+        return (res.img = res.img_noscript);
+      }
+    });
     console.log(data);
   });
 }
