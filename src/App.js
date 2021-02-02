@@ -10,8 +10,7 @@ import Scraper from "./components/Scraper.js";
 and all these things will be added to you." */
 
 export default function App() {
-  Scraper();
-
+  const data = Scraper();
   return (
     <AppWrapper>
       <Header />

@@ -1,14 +1,13 @@
 import cheerio from "cheerio";
 import request from "request";
 
-export default async function Scraper() {
+export default function Scraper() {
   const url =
     "https://app.scrapingbee.com/api/v1/?api_key=AP91PR5CN47N6B8KRFX51XBWRBMGMRHDONI0BIZX622C8BTG5U5NRDM6L9H9XZTVVYXDO8O5M0ER8TKB&url=https%3A%2F%2Fpr.olx.com.br%2Fregiao-de-ponta-grossa-e-guarapuava%2Fautos-e-pecas%2Fcarros-vans-e-utilitarios&render_js=false";
 
   request({ url: url }, (err, res, body) => {
     if (err) return console.error(err);
     let $ = cheerio.load(body);
-
     let data = $("div.fnmrjs-1")
       .map((i, el) => {
         return {
@@ -24,8 +23,6 @@ export default async function Scraper() {
             .text(),
           img: $(el).find("div.sc-101cdir-2.kBCTPf img").attr("src"),
           img_noscript: $(el).find("div.sc-101cdir-2 noscript").text()
-
-          //usar if para img, pegar link pro anuncio
           //descobrir como iterar por todas paginas
         };
       })
@@ -33,10 +30,9 @@ export default async function Scraper() {
     data.map((res) => {
       if (
         res.img === "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-      ) {
-        return (res.img = res.img_noscript);
-      }
+      )
+        return (res.img = res.img_noscript.slice(10, 69));
     });
-    console.log(data);
+    return data;
   });
 }
