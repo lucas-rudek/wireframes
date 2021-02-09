@@ -28,7 +28,7 @@ export default function Scraper() {
             .text(),
           img: $(el).find("div.sc-101cdir-2.kBCTPf img").attr("src"),
           img_noscript: $(el).find("div.sc-101cdir-2 noscript").text(),
-          link: $(el).find("a:only-of-type").attr("href")
+          link: $(el).parent("a").attr("href")
         };
       })
       .get();
